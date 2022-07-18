@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: #6b6b6b;
+}
+.painelDeLogin {
+  top: 50%;
+  left: 50%;
+  width: 16rem;
+  height: 24rem;
+  max-width: 320px;
+  position: absolute;
+  padding: 50px 35px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(139, 51, 253, 0.24);
+  background-color: rgba(139, 51, 253, 0.24);
+}
+form * {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.espacamento label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.espacamento  input {
+  width: 92%;
+  height: 50px;
+  display: block;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+::placeholder {
+  color: #e5e5e5;
+}
+.botaoLogin{
+  width: 100%;
+  z-index: 1;
+  margin-top: 30px;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background: #fff;
+}
+.botaoLogin::before {
+  content: "";
+  top: 0%;
+  left: -100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #3e91ff;
+}
+.botaoLogin:hover {
+  color: #fff;
+}
+.botaoLogin:hover::before {
+  left: 0%;
+}
+
+.aluno{
+  width: 100%;
+  z-index: 1;
+  margin-top: 30px;
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background: #3e91ff;
+  top: 55px;
+}
+.professor{
+  width: 100%;
+  z-index: 1;
+  margin-top: 30px;
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background: #ff58f4;
+  top:55px;
+}
+
+.bolsa{
+  width: 150px;
+  left:50px;
+  margin-top: -50px;
+  padding: -20px 60px;
+  overflow: hidden;
+  position: relative;
+  top: 35px;
+}
